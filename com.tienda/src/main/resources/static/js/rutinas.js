@@ -21,3 +21,4 @@ function addCard(formulario) {
     $("#resultsBlock").load(url);
 }
 
+
