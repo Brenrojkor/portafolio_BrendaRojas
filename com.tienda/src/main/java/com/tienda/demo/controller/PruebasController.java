@@ -43,7 +43,6 @@ public class PruebasController {
         model.addAttribute("categorias", categorias);
         return "/pruebas/listado";
     }
-    
 
     //Los métodos siguientes son para la prueba de consultas ampliadas
     @GetMapping("/listado2")

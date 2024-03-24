@@ -6,12 +6,14 @@ package com.tienda.demo.service;
 
 import org.springframework.web.multipart.MultipartFile;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public interface FirebaseStorageService {
 
     public String cargaImagen(MultipartFile archivoLocalCliente, String carpeta, Long id);
 
     //El BuketName es el <id_del_proyecto> + ".appspot.com"
-    final String BucketName = "techshop-b4761.appspot.com";
+    final String BucketName = "techshop-curso.appspot.com";
 
     //Esta es la ruta básica de este proyecto Techshop
     final String rutaSuperiorStorage = "techshop";
@@ -20,6 +22,7 @@ public interface FirebaseStorageService {
     final String rutaJsonFile = "firebase";
     
     //El nombre del archivo Json
-    final String archivoJsonFile = "techshop-b4761-firebase-adminsdk-i8grz-3d70b982a1.json";
+    final String archivoJsonFile = "techshop-curso-firebase-adminsdk-ik8h4-d999462bf9.json";
 }
+
 

@@ -4,12 +4,6 @@
  */
 package com.tienda.demo.service.impl;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-
 import com.tienda.demo.dao.CategoriaDao;
 import com.tienda.demo.domain.Categoria;
 import com.tienda.demo.service.CategoriaService;
@@ -18,10 +12,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 @Service
 public class CategoriaServiceImpl implements CategoriaService {
 
-    @Autowired
+     @Autowired
     private CategoriaDao categoriaDao;
 
     @Override
@@ -38,17 +37,6 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Transactional(readOnly = true)
     public Categoria getCategoria(Categoria categoria) {
         return categoriaDao.findById(categoria.getIdCategoria()).orElse(null);
-    }
-
-    @Override
-    @Transactional
-    public void save(Categoria categoria) {
-        categoriaDao.save(categoria);
-    }
-
-    @Override
-    @Transactional
-    public void delete(Categoria categoria) {
-        categoriaDao.delete(categoria);
-    }
+    }  
+    
 }

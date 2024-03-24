@@ -4,7 +4,6 @@
  */
 package com.tienda.demo.domain;
 
-
 import jakarta.persistence.*;
 import java.io.Serializable;
 import lombok.Data;
